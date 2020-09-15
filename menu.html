@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Twins Coffee</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- Navigation Bar-->
+	
+	<div class="navtop" id ="IDnavtop">
+		<img src="LOGO.png" alt="logo01">
+		<!-- 2.4.1 a) HTML5 ul tag -->
+		<div class="navcontent">
+			<!-- 2.4.1 HTML5 a tag -->
+			<a  href="javascript:void(0);" class="icon" onclick="NavResponsive()" >
+				<i class="fa fa-bars"></i>
+			</a>
+			<a class="menu" href="Index.html">Home</a>
+			<a class="menu" href="aboutus.html">About us</a>
+			<a class="menu" href="menu.html">Menu</a>
+			<a class="menu" href="Formregister.html">Membership</a>
+			<!-- <a class="menu" href="CrossReferencePage.html">Reference</a>  -->
+		</div>
+	</div>
+	<!-- page img 01 -->
+	
+    <section>
+    <div class="menubox" id="menubox">
+        <img src="wall03.png" alt="wall 03: Menu" class="menubackground">
+        <div class="menutext">
+			<!-- 2.4.1 a) HTML5 hn tag -->
+				<!-- 2.4.1 b) inline image -->
+                <h1><img class="menuicon" src="menuicon.png" alt="footerlogo">  MENU <img class="menuicon" src="menuicon.png" alt="footerlogo"></h1>
+                <h2>COFFEE</h2>
+                <dl>
+					<!-- 2.4.1 a) HTML5 dd tag -->
+                	<dd> Vietnamese Milks Coffee 7$</dd>
+					<dd> Espressio 5$</dd>
+                    <dd>Ameriacano 5$</dd>
+                    <dd>Cappuccino 5$</dd>
+				</dl>  
+                <h2>MILKSHAKES</h2>
+                <dl>	
+                    <dd>Mango 6$</dd>
+                    <dd>Apple 6$</dd>
+                    <dd>orange 6$</dd>
+                    <dd>Strawberry 6$</dd>
+				</dl>  
+		</div>
+		        <div class="menuimage">
+            <img src="menuimage.png" alt="menu image" class="image">
+        </div>
+	</div>
+	<!-- 2.4.5 a) Multimedia video -->
+	<div class="video" id="menuvideo">
+		<video autoplay muted loop id="myVideo">
+			<source src="thetwinscoffee.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+	</div>
+	</section>
+	
+	<!-- Footer of page-->
+	
+    <footer id="footer">
+		<div class="footer">
+		  <div class="container01">
+			<a href="index.html"><img src="LOGO.png" alt="logo02" ></a>
+		  </div>
+		  <div class="container02">
+			<h1>Contact Info </h1>
+			<h2 class="footeraddress">Address: </h2>
+				<ol>
+					<li>222 ThompsonRiver Dr, VietNam</li>
+					<li>222 Mcgill Dr, VietNam</li>
+					<li>Viet Nam University</li>
+				</ol>
+			<p class="footerweb"> Website: <a href="Index.html"><img src="footerlogo.png" alt="footerlogo"></a></p>
+			<p> Phone: 0123456789</p>
+			<p> Email: thetwinscoffee@coffee.ca</p>
+			<div class="navfooter">    
+				<a class="footermenu" href="Index.html">Home</a>
+				<a class="footermenu" href="aboutus.html">Aboutus</a>
+				<a class="footermenu" href="menu.html">Menu</a>
+				<a class="footermenu" href="Formregister.html">Membership</a>
+				<a class="footermenu" href="CrossReferencePage.html">Reference</a>
+			</div>
+			<hr>
+			<p>Copyright © 2019 The Twins Coffee. All rights reserved.</p>
+					  
+		  </div>
+		  <div class ="container03">
+			<h1> Open Hours </h1>
+
+			<!-- 2.4.4 a) Graphical Web Tables -->
+
+			<table>
+				<tr>
+					<th>Date</th>
+					<th>Hours</th>
+				</tr>
+				<tr>
+					<td>Mon </td>
+					<td>7am -11pm </td>
+				</tr>
+				<tr>
+					<td>Tue </td>
+					<td>7am -11pm </td>
+				</tr>
+				<tr>
+					<td>Wed </td>
+					<td>7am -11pm </td>
+				</tr>
+				<tr>
+					<td>Thu </td>
+					<td>7am -11pm </td>
+				</tr>
+				<tr>
+					<td>Fri </td>
+					<td>7am -11pm </td>
+				</tr>
+				<tr>
+					<td>Sat </td>
+					<td>7am -11pm </td>
+				</tr>
+				<tr>
+					<td>Sun </td>
+					<td>7am -11pm </td>
+				</tr>
+			</table>
+		  </div>
+		</div>
+	  </footer>
+        <script>
+                function NavResponsive() {
+                  var x = document.getElementById("IDnavtop");
+                  if (x.className === "navtop") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "navtop";
+                  }
+                }
+        </script>
+        
+    </body>
+    </html>

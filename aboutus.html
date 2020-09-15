@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Twins Coffee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- Navigation Bar-->
+	
+	<div class="navtop" id ="IDnavtop">
+		<img src="LOGO.png" alt="logo01">
+		<div class="navcontent">
+			<a  href="javascript:void(0);" class="icon" onclick="NavResponsive()" >
+				<i class="fa fa-bars"></i>
+      </a>
+      <!-- 2.4.1 a) HTML5 a tag -->
+			<a class="menu" href="Index.html">Home</a>
+			<a class="menu" href="aboutus.html">About us</a>
+			<a class="menu" href="menu.html">Menu</a>
+			<a class="menu" href="Formregister.html">Membership</a>
+			<!-- <a class="menu" href="CrossReferencePage.html">Reference</a> -->
+		</div>
+	</div>
+	<!-- page About us -->
+	<div class="aboutusbox" id="aboutus" >
+            <img src="wall02.png" alt="wall 01: About us" class="menuaboutus">
+            <div class="aboutustext">
+                <h1>About us</h1>
+                <h2>Exceptional quality coffee</h2>
+                <p>We want to create a signature mark for <span> Vietnamese Coffee </span> with meticulousness and extreme care. We planted and cared for the coffee plants with strict standards to bring out the best possible products for the consumer. Our goal is to take part in creating changes that will have benefit for the coffee industry of Vietnam.
+                </p>
+            
+            </div>
+    </div>
+    <div class="imgbox03" id="section03" >
+        <img src="wall03.png" alt="wall 03: Menu">
+        <div class="inlinetext03">
+            <p class="inimgtext03">ouR MEnU</p>
+            <a class="button03" href="menu.html"><span>Order &#8594</span></a>
+        </div>
+      </div>
+    <footer id="footer">
+      <div class="footer">
+        <div class="container01">
+          <a href="index.html"><img src="LOGO.png" alt="logo02" ></a>
+        </div>
+        <div class="container02">
+          <h1>Contact Info </h1>
+          <h2 class="footeraddress">Address: </h2>
+          <!-- 2.4.1 a) HTML5 a tag -->
+				  <ol>
+					  <li>222 ThompsonRiver Dr, VietNam</li>
+					  <li>222 Mcgill Dr, VietNam</li>
+					  <li>Viet Nam University</li>
+          </ol>
+        
+          <p class="footerweb"> Website: <a href="Index.html"><img src="footerlogo.png" alt="footerlogo"></a></p>
+          <p> Phone: 0123456789</p>
+          <p> Email: thetwinscoffee@coffee.ca</p>
+          <div class="navfooter">    
+            <a class="footermenu" href="Index.html">Home</a>
+            <a class="footermenu" href="aboutus.html">Aboutus</a>
+            <a class="footermenu" href="menu.html">Menu</a>
+            <a class="footermenu" href="Formregister.html">Membership</a>
+            <a class="footermenu" href="CrossReferencePage.html">Reference</a>
+          </div>
+          <hr>
+          <p>Copyright © 2019 The Twins Coffee. All rights reserved.</p>
+          
+        
+        </div>
+        <div class ="container03">
+            <h1> Open Hours </h1>
+      
+            <!-- 2.4.4 a) Graphical Web Tables -->
+      
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Hours</th>
+              </tr>
+              <tr>
+                <td>Mon </td>
+                <td>7am -11pm </td>
+              </tr>
+              <tr>
+                <td>Tue </td>
+                <td>7am -11pm </td>
+              </tr>
+              <tr>
+                <td>Wed </td>
+                <td>7am -11pm </td>
+              </tr>
+              <tr>
+                <td>Thu </td>
+                <td>7am -11pm </td>
+              </tr>
+              <tr>
+                <td>Fri </td>
+                <td>7am -11pm </td>
+              </tr>
+              <tr>
+                <td>Sat </td>
+                <td>7am -11pm </td>
+              </tr>
+              <tr>
+                <td>Sun </td>
+                <td>7am -11pm </td>
+              </tr>
+            </table>
+            </div>
+      </div>
+    </footer>
+        <script>
+                function NavResponsive() {
+                  var x = document.getElementById("IDnavtop");
+                  if (x.className === "navtop") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "navtop";
+                  }
+                }
+        </script>
+        
+    </body>
+    </html>

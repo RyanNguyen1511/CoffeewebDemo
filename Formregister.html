@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Twins Coffee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- Navigation Bar-->
+	
+	<div class="navtop" id ="IDnavtop">
+		<img src="LOGO.png" alt="logo01">
+		<div class="navcontent">
+			<a  href="javascript:void(0);" class="icon" onclick="NavResponsive()" >
+				<i class="fa fa-bars"></i>
+			</a>
+			<a class="menu" href="Index.html">Home</a>
+			<a class="menu" href="aboutus.html">About us</a>
+			<a class="menu" href="menu.html">Menu</a>
+			<a class="menu" href="Formregister.html">Membership</a>
+			<!-- <a class="menu" href="CrossReferencePage.html">Reference</a> -->
+		</div>
+	</div>
+	<!-- page Form -->
+	        <div class="imgbox01" id="section01" >
+            <img src="wall01.png" alt="wall 1: Register for free Gold membership">
+            <div class="formregister">
+              <!-- 2.4.3. a) Web Form -->
+                  <form action="Formregister.html" class="form">
+                    <h1> Register</h1>
+                    <div>
+                        <label > First name:</label> <input type="text" name="fName" placeholder="First name" required ><br>
+                        <label >Last name:</label> <input type="text" name="lName" placeholder="Last name" required ><br>
+                        <label >Phone:</label> <input type="text" name="phone" placeholder="2508888888" required pattern="^[01]?[- .]?\(?(?!\d[1]{2})[2-9]\d{2}\)?[- .]?(?!\d[1]{2})\d{3}[- .]?\d{4}$"><br>
+                        <label >Email:</label> <input type="text" name="email" placeholder="thetwinscoffee@coffee.ca" required><br>
+                        <input type="submit" value="Register" onclick="setForm()">
+                    </div>
+                  </form>
+            </div>
+          </div>
+
+  <!-- page menu -->
+        <div class="imgbox03" id="section03" >
+            <img src="wall03.png" alt="wall 03: Menu">
+            <div class="inlinetext03">
+                <p class="inimgtext03">ouR MEnU</p>
+                <a class="button03" href="menu.html"><span>Order &#8594</span></a>
+            </div>
+        </div>
+
+   <!-- Footer -->       
+        <footer id="footer">
+          <div class="footer">
+            <div class="container01">
+              <a href="index.html"><img src="LOGO.png" alt="logo02" ></a>
+            </div>
+            <div class="container02">
+              <h1>Contact Info </h1>
+              <h2 class="footeraddress">Address: </h2>
+				        <ol>
+					        <li>222 ThompsonRiver Dr, VietNam</li>
+					        <li>222 Mcgill Dr, VietNam</li>
+					        <li>Viet Nam University</li>
+				        </ol>
+              <p class="footerweb"> Website: <a href="Index.html"><img src="footerlogo.png" alt="footerlogo"></a></p>
+              <p> Phone: 0123456789</p>
+              <p> Email: thetwinscoffee@coffee.ca</p>
+              <div class="navfooter">    
+                  <a class="footermenu" href="Index.html">Home</a>
+                  <a class="footermenu" href="aboutus.html">Aboutus</a>
+                  <a class="footermenu" href="menu.html">Menu</a>
+                  <a class="footermenu" href="Formregister.html">Membership</a>
+                  <a class="footermenu" href="CrossReferencePage.html">Reference</a>
+              </div>
+              <hr>
+              <p>Copyright © 2019 The Twins Coffee. All rights reserved.</p>
+            
+            </div>
+            <div class ="container03">
+                <h1> Open Hours </h1>
+          
+                <!-- 2.4.4 a) Graphical Web Tables -->
+          
+                <table>
+                  <tr>
+                    <th>Date</th>
+                    <th>Hours</th>
+                  </tr>
+                  <tr>
+                    <td>Mon </td>
+                    <td>7am -11pm </td>
+                  </tr>
+                  <tr>
+                    <td>Tue </td>
+                    <td>7am -11pm </td>
+                  </tr>
+                  <tr>
+                    <td>Wed </td>
+                    <td>7am -11pm </td>
+                  </tr>
+                  <tr>
+                    <td>Thu </td>
+                    <td>7am -11pm </td>
+                  </tr>
+                  <tr>
+                    <td>Fri </td>
+                    <td>7am -11pm </td>
+                  </tr>
+                  <tr>
+                    <td>Sat </td>
+                    <td>7am -11pm </td>
+                  </tr>
+                  <tr>
+                    <td>Sun </td>
+                    <td>7am -11pm </td>
+                  </tr>
+                </table>
+                </div>
+          </div>
+        </footer>
+        <script>
+                function NavResponsive() {
+                  var x = document.getElementById("IDnavtop");
+                  if (x.className === "navtop") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "navtop";
+                  }
+                }
+
+                //  2.4.6 c) Validation form input with Javasrcipt
+                window.onload = setForm;
+                 
+                  function setForm() {
+                  document.forms[0].onsubmit = function() {
+                    if (this.checkValidity()) alert("Thanks for your register, We will contact you soon");
+                    return false;
+                  }
+			}
+
+        </script>
+        
+    </body>
+    </html>

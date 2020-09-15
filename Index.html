@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Twins Coffee</title>
+	<!-- 2.4.1 e) HTML5 meta tag -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- Navigation Bar-->
+	
+	<div class="navtop" id ="IDnavtop">
+		<img src="LOGO.png" alt="logo01">
+		<!-- 2.4.1 a) HTML5 ul tag -->
+		<div class="navcontent">
+			<!-- 2.4.1 a) HTML5 a tag -->
+			<a  href="javascript:void(0);" class="icon" onclick="NavResponsive()" >
+				<!-- 2.4.7 b) navicon image for mobile design -->
+				<i class="fa fa-bars"></i>
+			</a>
+			<a class="menu" href="Index.html">Home</a>
+			<a class="menu" href="aboutus.html">About us</a>
+			<a class="menu" href="menu.html">Menu</a>
+			<a class="menu" href="Formregister.html">Membership</a>
+		<!-- 	<a class="menu" href="CrossReferencePage.html">Reference</a> -->
+		</div>
+	</div>
+	
+
+	<!-- page img 01 -->
+	<div class="imgbox01" id="section01" >
+		<img src="wall01.png" alt="wall 1: Register for free Gold membership">
+		<div class="inlinetext01">
+			<p class="inimgtext01">Join Us <span style="text-transform: initial;">&#174;</span> <br> Rewards Everyday</p>
+			<!-- 2.4.8 a) Call to the Action 01 -->
+			<a class="button01" href="Formregister.html">Register</a>
+		</div>
+	</div>
+
+		<!-- Page img 02 -->
+	<div class="imgbox02" id="section02">
+		<img src="wall02.png" alt="wall 01: About us">
+		<div class="inlinetext02">
+				<p class="inimgtext02">About Us</p>
+				<!-- 2.4.1 c) Special character -->
+				<a class="button02" href="aboutus.html">MoRE &#8594;</a>
+		</div>
+	</div>
+
+
+		<!-- page img 03 -->
+	<div class="imgbox03" id="section03" >
+		<img src="wall03.png" alt="wall 03: Menu">
+		<div class="inlinetext03">
+				<p class="inimgtext03">ouR MEnU</p>
+				<!-- 2.4.1 c) Special character --><!-- 2.4.8 a) Call to the Action 02 -->
+				<a class="button03" href="menu.html">Order &#8594;</a>
+		</div>
+	</div>
+		<!-- Block Quotes -->
+		<!-- 2.4.1 a) HTML5 blockquote tag -->
+	<div class="blockquote" id="blockquote">
+		<blockquote class="blockquotecontent" id="blockquotecontent">
+				At The Twins Coffee, we always appreciate the stories and values that connect people.<br>
+				Where people are chained together and found joy, sharing love with coffee.</p>
+				<button type="button" onclick="window.location.href = 'menu.html';" >&gt;&gt; Click for Free Drinks &lt;&lt;</button> <!-- 2.4.8 a) Call to the Action 01 -->
+		</blockquote>
+	</div>
+
+	
+	<footer id="footer">
+		<div class="footer">
+		  <div class="container01">
+			<a href="index.html"><img src="LOGO.png" alt="logo02" ></a>
+		  </div>
+		  <div class="container02">
+			<h1>Contact Info </h1>
+			  <h2 class="footeraddress">Address: </h2>
+			  <!-- 2.4.1 HTML5 ol tag -->
+				<ol>
+					<li>222 ThompsonRiver Dr, VietNam</li>
+					<li>222 Mcgill Dr, VietNam</li>
+					<li>Viet Nam University</li>
+				</ol>
+				<!-- 2.4.1 b) inline image clickable -->
+			<!-- <p class="footerweb"> Website: <a href="Index.html"><img src="footerlogo.png" alt="footerlogo"></a></p> -->
+			<p> <b>Phone:</b> 0123456789</p>
+			<p> <b>Email:</b> thetwinscoffee@coffee.ca</p>
+			<div class="navfooter">    
+				<a class="footermenu" href="Index.html" >Home</a>
+				<a class="footermenu" href="aboutus.html">Aboutus</a>
+				<a class="footermenu" href="menu.html">Menu</a>
+				<a class="footermenu" href="Formregister.html">Membership</a>
+				<a class="footermenu" href="CrossReferencePage.html">Reference</a>
+			</div>
+			<hr>
+			<p>Copyright © 2019 The Twins Coffee. All rights reserved.</p>
+			<p>Date: <span id="Datetime"></span></p>
+			
+			<p >
+				<!-- 2.4.1 e) last Update -->
+			  <b>The web site was last updated:</b>
+			  <script>document.write(document.lastModified);</script>
+			</p>
+		  
+		  </div>
+		  <div class ="container03">
+				<h1> Open Hours </h1>
+	
+				<!-- 2.4.4 a) Graphical Web Tables -->
+	
+				<table>
+					<tr>
+						<th>Date</th>
+						<th>Hours</th>
+					</tr>
+					<tr>
+						<td>Mon </td>
+						<td>7am -11pm </td>
+					</tr>
+					<tr>
+						<td>Tue </td>
+						<td>7am -11pm </td>
+					</tr>
+					<tr>
+						<td>Wed </td>
+						<td>7am -11pm </td>
+					</tr>
+					<tr>
+						<td>Thu </td>
+						<td>7am -11pm </td>
+					</tr>
+					<tr>
+						<td>Fri </td>
+						<td>7am -11pm </td>
+					</tr>
+					<tr>
+						<td>Sat </td>
+						<td>7am -11pm </td>
+					</tr>
+					<tr>
+						<td>Sun </td>
+						<td>7am -11pm </td>
+					</tr>
+				</table>
+			  </div>
+		</div>
+	  </footer>
+	<script>
+			//  2.4.6 a) Javascript, variable, functions, logical operators,...
+			function NavResponsive() {
+			  var x = document.getElementById("IDnavtop");
+			  if (x.className === "navtop") {
+				x.className += " responsive";
+			  } else {
+				x.className = "navtop";
+			  }
+			}
+			function lastUpdate() {
+  			var x = document.lastModified;
+  			document.getElementById("demo").innerHTML = x;
+			}
+			//  2.4.6 b) Use of system date
+			var d = new Date();
+			var month = new Array();
+				month[0] = "January";
+				month[1] = "February";
+				month[2] = "March";
+				month[3] = "April";
+				month[4] = "May";
+				month[5] = "June";
+				month[6] = "July";
+				month[7] = "August";
+				month[8] = "September";
+				month[9] = "October";
+				month[10] = "November";
+				month[11] = "December";
+			var m = month[d.getMonth()];
+			var year =d.getFullYear();
+			var day =d.getDate();
+			document.getElementById("Datetime").innerHTML = m + "  " + day + "  "+year;
+
+
+	</script>
+	
+</body>
+</html>
